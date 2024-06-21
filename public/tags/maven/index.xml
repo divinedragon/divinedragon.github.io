@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Deepak Shakya</title>
+    <link>//localhost:1313/tags/maven/</link>
+    <description>Recent content in Maven on Deepak Shakya</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Build with Apache Maven - Command Prompt</title>
+      <link>//localhost:1313/blog/002-first-build/first-build-with-apache-maven-command-prompt/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/002-first-build/first-build-with-apache-maven-command-prompt/</guid>
+      <description>This article demonstrates the very first build with Apache Maven. In this article, we will use command prompt to create our simple Maven project and then use mvn command to build it&#xA;You can watch the entire demo in this video.&#xA;Pre-requisite You need to have Apache Maven already installed on your system. If you don&amp;rsquo;t have Maven installed, you can install it by following steps from our previous articles:</description>
+    </item>
+    <item>
+      <title>Install Apache Maven on Windows</title>
+      <link>//localhost:1313/blog/001-install/install-apache-maven-on-windows/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/001-install/install-apache-maven-on-windows/</guid>
+      <description>This articles gives you a step by step walkthrough for installing Apache Maven on Mac.&#xA;You can watch the entire installation demo in this video.&#xA;Introduction Apache Maven is the most popular build and project management tool for Java projects. Maven is built on top of Java, so if you plan to install Maven on your system, you need to have Java installed on your system.&#xA;Installation of Maven on any system consists of following 3 steps.</description>
+    </item>
+    <item>
+      <title>Install Apache Maven on Mac</title>
+      <link>//localhost:1313/blog/001-install/install-apache-maven-on-mac/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/001-install/install-apache-maven-on-mac/</guid>
+      <description>This articles gives you a step by step walkthrough for installing Apache Maven on Mac.&#xA;You can watch the entire installation demo in this video.&#xA;Introduction Apache Maven is the most popular build and project management tool for Java projects. Maven is built on top of Java, so if you plan to install Maven on your system, you need to have Java installed on your system.&#xA;Installation of Maven on any system consists of following 3 steps.</description>
+    </item>
+    <item>
+      <title>Install Apache Maven on Linux</title>
+      <link>//localhost:1313/blog/001-install/install-apache-maven-on-linux/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/001-install/install-apache-maven-on-linux/</guid>
+      <description>This article gives you a step by step walk-through for installing Apache Maven on Linux.&#xA;You can watch the entire installation demo in this video.&#xA;Introduction&#xA;Apache Maven is the most popular build and project management tool for Java projects. Maven is built on top of Java, so you need to have Java installed on your system.&#xA;Installation of Maven on any system consists of following 3 steps.&#xA;Download the Apache Maven binary zip from the official website.</description>
+    </item>
+  </channel>
+</rss>
