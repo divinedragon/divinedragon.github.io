@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Deepak Shakya</title>
-    <link>/blog/</link>
-    <description>Recent content in Blogs on Deepak Shakya</description>
+    <title>System-Design on Deepak Shakya</title>
+    <link>/tags/system-design/</link>
+    <description>Recent content in System-Design on Deepak Shakya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/system-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-Agent Chatbot - Part1</title>
       <link>/blog/2024/08/multi-agent-chatbot-part1/</link>
       <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
       <guid>/blog/2024/08/multi-agent-chatbot-part1/</guid>
       <description>With the explosion of Artificial Intelligence agents these days, we have a wide variety of intelligent agents which focus on solving a very focussed problem. However, to solve complex problems, we often need not one, but multiple agents. Often, this is the case in large organizations where different teams own different domains of the business processes, and their individual agents provide relevant expertise of their domain. Also, this reduces the burden on a single team to develop a large model/agent which solves all problems.</description>
-    </item>
-    <item>
-      <title>Ideal use of Machine Learning and Artificial Intelligence</title>
-      <link>/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/</guid>
-      <description>I am trying to make sense of the down pour of money by various companies to solve human problems, when I see so many real problems like Climate Change, should be so much front and center everywhere.&#xA;It is refreshing to see researchers using Machine Learning and Artificial Intelligence to be able to bring more visibility to the nature around us, and one of those research talking about Elephants using name-like calls, and use of Machine Learning to help with their study.</description>
     </item>
   </channel>
 </rss>

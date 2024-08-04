@@ -6,8 +6,15 @@
     <description>Recent content in Artificial-Intelligence on Deepak Shakya</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multi-Agent Chatbot - Part1</title>
+      <link>/blog/2024/08/multi-agent-chatbot-part1/</link>
+      <pubDate>Sun, 04 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>/blog/2024/08/multi-agent-chatbot-part1/</guid>
+      <description>With the explosion of Artificial Intelligence agents these days, we have a wide variety of intelligent agents which focus on solving a very focussed problem. However, to solve complex problems, we often need not one, but multiple agents. Often, this is the case in large organizations where different teams own different domains of the business processes, and their individual agents provide relevant expertise of their domain. Also, this reduces the burden on a single team to develop a large model/agent which solves all problems.</description>
+    </item>
     <item>
       <title>Ideal use of Machine Learning and Artificial Intelligence</title>
       <link>/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/</link>

@@ -52,14 +52,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name">Deepak Shakya</title>
-<meta property="og:title" content=Deepak&#32;Shakya />
-<meta name="twitter:title" content=Deepak&#32;Shakya />
-<meta itemprop="name" content=Deepak&#32;Shakya />
-<meta name="application-name" content=Deepak&#32;Shakya />
+<title itemprop="name">Deepak Shakya - Multi-Agent Chatbot - Part1</title>
+<meta property="og:title" content=Deepak&#32;Shakya&#32;-&#32;Multi-Agent&#32;Chatbot&#32;-&#32;Part1 />
+<meta name="twitter:title" content=Deepak&#32;Shakya&#32;-&#32;Multi-Agent&#32;Chatbot&#32;-&#32;Part1 />
+<meta itemprop="name" content=Deepak&#32;Shakya&#32;-&#32;Multi-Agent&#32;Chatbot&#32;-&#32;Part1 />
+<meta name="application-name" content=Deepak&#32;Shakya&#32;-&#32;Multi-Agent&#32;Chatbot&#32;-&#32;Part1 />
 <meta property="og:site_name" content="Deepak Shakya" />
 
 
@@ -69,18 +73,17 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/tags/machine-learning/" />
-<link rel="canonical" href="/tags/machine-learning/" itemprop="url" />
-<meta name="url" content="/tags/machine-learning/" />
-<meta name="twitter:url" content="/tags/machine-learning/" />
-<meta property="og:url" content="/tags/machine-learning/" />
+<base href="/blog/2024/08/multi-agent-chatbot-part1/" />
+<link rel="canonical" href="/blog/2024/08/multi-agent-chatbot-part1/" itemprop="url" />
+<meta name="url" content="/blog/2024/08/multi-agent-chatbot-part1/" />
+<meta name="twitter:url" content="/blog/2024/08/multi-agent-chatbot-part1/" />
+<meta property="og:url" content="/blog/2024/08/multi-agent-chatbot-part1/" />
 
 
 <meta property="og:updated_time" content="2024-08-04T00:00:00Z" />
 
 
 <link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
-<link href="/tags/machine-learning/index.xml" rel="alternate" type="application/rss+xml" title="Deepak Shakya" />
 
 <meta name="robots" content="index,follow" />
 <meta name="googlebot" content="index,follow" />
@@ -253,13 +256,8 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <div class="homepage-content">
-  
-</div>
-<div class="posts">
-  
-  <article class="post">
-      <div class="info">
+                <div class="post">
+  <div class="info">
   <h1 class="post-title">
     <a href="/blog/2024/08/multi-agent-chatbot-part1/">Multi-Agent Chatbot - Part1</a>
   </h1>
@@ -310,80 +308,98 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
   
 </div>
 
-      
-      With the explosion of Artificial Intelligence agents these days, we have a wide variety of intelligent agents which focus on solving a very focussed problem. However, to solve complex problems, we often need not one, but multiple agents. Often, this is the case in large organizations where different teams own different domains of the business processes, and their individual agents provide relevant expertise of their domain. Also, this reduces the burden on a single team to develop a large model/agent which solves all problems.
-      
-      <div class="read-more-link">
-          <a href="/blog/2024/08/multi-agent-chatbot-part1/">Read More…</a>
-      </div>
-      
-      
-  </article>
-  <article class="post">
-      <div class="info">
-  <h1 class="post-title">
-    <a href="/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/">Ideal use of Machine Learning and Artificial Intelligence</a>
-  </h1>
-
-  <div class="headline">
-    <div>
-      
-      <time datetime=" 2024-08-01T00:00:00Z" class="post-date">
-        August 1, 2024
-      </time>
-      
-      <span> - </span>
-      <span class="reading-time">
-        
-          
-        
-
-        <span>1 min read</span>
-      </span>
-    </div>
-
-    
-    <ul class="tags">
-      
-      <li class="tag-machine-learning">
-        <a href="/tags/machine-learning">machine-learning</a>
-      </li>
-      
-      <li class="tag-artificial-intelligence">
-        <a href="/tags/artificial-intelligence">artificial-intelligence</a>
-      </li>
-      
-      <li class="tag-nature">
-        <a href="/tags/nature">nature</a>
-      </li>
-      
-    </ul>
-    
-  </div>
+  <p>With the explosion of Artificial Intelligence agents these days, we have a wide variety of intelligent agents which focus on solving a very focussed problem. However, to solve complex problems, we often need not one, but multiple agents. Often, this is the case in large organizations where different teams own different domains of the business processes, and their individual agents provide relevant expertise of their domain. Also, this reduces the burden on a single team to develop a large model/agent which solves all problems.</p>
+<p>Here is my version on how I tried to setup such a Multi-Agent Chatbot. Below are all the articles in case you want to skip over to any specific topic.</p>
+<ol>
+<li><a href="/blog/2024/08/multi-agent-chatbot-part1">Multi-Agent Chatbot - Part1</a> - This article. Talks about general introduction and high level design</li>
+<li><a href="/blog/2024/08/multi-agent-chatbot-part2">Multi-Agent Chatbot - Part2</a> - Discusses and code for the Agent Router component</li>
+<li><a href="/blog/2024/08/multi-agent-chatbot-part3">Multi-Agent Chatbot - Part3</a> - Discusses and code for the Chatbot UI interface</li>
+<li><a href="/blog/2024/08/multi-agent-chatbot-part4">Multi-Agent Chatbot - Part4</a> - Discusses and code for the Agents and integration with Agent Router</li>
+<li><a href="/blog/2024/08/multi-agent-chatbot-part5">Multi-Agent Chatbot - Part5</a> - Making it all work and working demo</li>
+</ol>
+<h2 id="architecture">Architecture</h2>
+<p>Below is a very high level architecture diagram for the different components in the system:</p>
+<p><img src="/blog/2024/08/images/002-multi-agent-chatbot_1.png" alt="Multi-Agent Chatbot - Architecture"></p>
+<ul>
+<li>User interacts with the Chatbot using the Chatbot UI in the Browser</li>
+<li>Chatbot UI interacts with Agent Router component via <a href="Websocket">Websocket</a> to allow a full duplex connection between the two.</li>
+<li>Agent Router uses Agent Selection component to locate the Agent to which the user messages should be sent to.</li>
+<li>Agent Router integrates with Agents via API calls so that depending on the Agent selection available, the incoming message from the User is forwarded to the selected agent.</li>
+<li>Agent Router provides a <a href="Webhook">Webhook</a> to all integrated Agents to allow posting the response from the Agents asynchronously, which is then forwarded to the User via the previous connected Websocket.</li>
+</ul>
+<h3 id="notes-from-architecture">Notes from Architecture</h3>
+<ul>
+<li>This design is done to give an idea of how such a multi-agent system setup could look like.</li>
+<li>It is not designed for scale. If you are looking for scalable version, tweak the design to make the components loosely coupled with each other. For instance, Agent Router doesn&rsquo;t need to integrate with Agents directly. It can publish events over a messaging queue (<a href="Kafka">Kafka</a>, <a href="ActiveMQ">ActiveMQ</a>, <a href="RabbitMQ">RabbitMQ</a>, <a href="AWSSQS">AWS SQS</a> etc.), and the agents could listen to messages via the Queue.</li>
+<li>In the actual code, I plan to skip the agent selection part, and the integration of Agent Router with Agents via API calls. This are fairly straight forward implementations, and something which I personally don&rsquo;t really feel the need to implement.</li>
+</ul>
+<h2 id="technology-selections">Technology Selections</h2>
+<p>As far as the technology goes, again since the idea is to keep things simple, here is what I plan to use for different components.</p>
+<ul>
+<li>
+<p>Chatbot UI</p>
+<ul>
+<li>Plain Old <a href="HTML">HTML</a>, <a href="CSS">CSS</a>, <a href="JavaScript">JavaScript</a> - While <a href="React">React</a> or <a href="Vue">Vue</a> might a more appropriate choice, I purposefully avoided those to keep things simple</li>
+<li><a href="Bootstrap">Bootstrap</a> - I like UI things to look good. Again, <a href="Bootstrap">Bootstrap</a> does the job and has all the components that you might ever need to build uis.</li>
+</ul>
+</li>
+<li>
+<p>Agent Router</p>
+<ul>
+<li><a href="Node.js">Node.js</a> - Again to avoid too much convolution with different Programming Languages, <a href="Node.js">Node.js</a> feels apt choice</li>
+<li><a href="Express">Express</a> - Since, we need a WebServer to handle Websocket connections, we use Express</li>
+<li><a href="Node.js-ws">Websocket, ws</a> - Websocket Library for <a href="Node.js">Node.js</a></li>
+<li><a href="express-ws">express-ws</a> - Allows <a href="Express">Express</a> to handle <a href="Websocket">WebSockets</a> using <a href="Node.js-ws">ws</a></li>
+<li><a href="uuid">uuid</a> - Generating of UUIDs</li>
+<li><a href="Pino">pino and pino-pretty</a> - Pino Logger</li>
+</ul>
+</li>
+<li>
+<p>Agent</p>
+<ul>
+<li><a href="Node.js">Node.js</a> - Again to avoid too much convolution with different Programming Languages</li>
+<li><a href="Express">Express</a> - Since, we need a WebServer to handle API calls from Chatbot, we use <a href="Express">Express</a></li>
+<li><a href="axios">axios</a> - Make HTTP Webhook calls back to Chatbot components from Agent</li>
+<li><a href="Pino">pino and pino-pretty</a> - Pino Logger</li>
+</ul>
+</li>
+</ul>
+<p>And that is it. This sets up the ground for us. In <a href="/blog/2024/08/multi-agent-chatbot-part2">Part 2</a>, we start to setup our Agent Router.</p>
 
   
   
+<div class="footer">
+    
+	    
+            <a class="previous-post" href="/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/?ref=footer"><span style="font-weight:bold;">« Previous</span><br>Ideal use of Machine Learning and Artificial...</a>
+        
+	    
+    
+</div>
 
   
 </div>
-
-      
-      I am trying to make sense of the down pour of money by various companies to solve human problems, when I see so many real problems like Climate Change, should be so much front and center everywhere.
-It is refreshing to see researchers using Machine Learning and Artificial Intelligence to be able to bring more visibility to the nature around us, and one of those research talking about Elephants using name-like calls, and use of Machine Learning to help with their study.
-      
-      <div class="read-more-link">
-          <a href="/blog/2024/08/ideal-use-of-machine-learning-and-artificial-intelligence/">Read More…</a>
-      </div>
-      
-      
-  </article>
-</div>
-
-
-
-
             </main>
             
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#architecture">Architecture</a>
+      <ul>
+        <li><a href="#notes-from-architecture">Notes from Architecture</a></li>
+      </ul>
+    </li>
+    <li><a href="#technology-selections">Technology Selections</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
         </div>
         
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
