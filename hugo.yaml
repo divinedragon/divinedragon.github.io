@@ -34,9 +34,9 @@ params:
     - Name: 'Home'
       URL: '/'
       HasChildren: false
-  #  - Name: 'Blog'
-  #    URL: '/blog/'
-  #    HasChildren: false
+    - Name: 'Blog'
+      URL: '/blog/'
+      HasChildren: false
   #  - Name: 'Readings'
   #    URL: '/reads/'
   #    HasChildren: false
@@ -68,7 +68,7 @@ params:
 #  series: 'series'
 #  tags: 'tags'
 
-#permalinks:
-#  reads: '/:section/:slug'
-#  blog: '/:section/:year/:month/:slug'
-#  projects: '/:section/'
+permalinks:
+  #reads: '/:section/:slug'
+  blog: '/:section/:year/:month/:slug'
+  #projects: '/:section/'
