@@ -34,9 +34,9 @@ params:
     - Name: 'Home'
       URL: '/'
       HasChildren: false
-  #  - Name: 'Blog'
-  #    URL: '/blog/'
-  #    HasChildren: false
+    - Name: 'Blog'
+      URL: '/blog/'
+      HasChildren: false
   #  - Name: 'Readings'
   #    URL: '/reads/'
   #    HasChildren: false
@@ -64,11 +64,11 @@ params:
     icon: true
     section: 'posts'
 
-# taxonomies:
-#  series: 'series'
-#  tags: 'tags'
+taxonomies:
+  tags: 'tags'
+  # series: 'series'
 
-#permalinks:
-#  reads: '/:section/:slug'
-#  blog: '/:section/:year/:month/:slug'
-#  projects: '/:section/'
+permalinks:
+  #reads: '/:section/:slug'
+  blog: '/:section/:year/:month/:slug'
+  #projects: '/:section/'
