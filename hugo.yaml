@@ -64,9 +64,9 @@ params:
     icon: true
     section: 'posts'
 
-# taxonomies:
-#  series: 'series'
-#  tags: 'tags'
+taxonomies:
+  tags: 'tags'
+  # series: 'series'
 
 permalinks:
   #reads: '/:section/:slug'
