@@ -38,6 +38,9 @@ params:
     - Name: 'Blog'
       URL: '/blog/'
       HasChildren: false
+    - Name: 'Saves'
+      URL: '/saves/'
+      HasChildren: false
   #  - Name: 'Readings'
   #    URL: '/reads/'
   #    HasChildren: false
@@ -72,4 +75,5 @@ taxonomies:
 permalinks:
   #reads: '/:section/:slug'
   blog: '/:section/:year/:month/:slug'
+  saves: '/:section/:slug'
   #projects: '/:section/'
