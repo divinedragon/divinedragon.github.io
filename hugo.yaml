@@ -41,9 +41,9 @@ params:
     - Name: 'Saves'
       URL: '/saves/'
       HasChildren: false
-  #  - Name: 'Readings'
-  #    URL: '/reads/'
-  #    HasChildren: false
+    - Name: 'Reads'
+      URL: '/reads/'
+      HasChildren: false
   #  - Name: 'Projects'
   #    URL: '/projects/'
   #    HasChildren: false
