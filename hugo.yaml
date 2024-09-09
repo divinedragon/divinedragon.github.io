@@ -1,7 +1,8 @@
 baseURL: '/'
 languageCode: 'en-us'
 title: 'Deepak Shakya'
-paginate: 5
+pagination:
+  pagerSize: 10
 
 markup:
   defaultMarkdownHandler: 'goldmark'
