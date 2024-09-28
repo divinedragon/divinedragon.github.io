@@ -36,7 +36,7 @@ Web Server is available at //localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-## Things that I use
+## 🌐 Things that I use
 * 📊 Analytics powered by [SimpleAnalytics](https://www.simpleanalytics.com/)
 * 💬 Comments powered by [Gisqus](https://giscus.app/) using [Github Discussions](https://docs.github.com/en/discussions/quickstart)
 
