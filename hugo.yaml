@@ -23,7 +23,7 @@ markup:
 params:
   brand: 'Deepak Shakya'
   # remote_brand_image: 'https://avatars.githubusercontent.com/u/91791?v=4'
-  og_image: 'deepak-shakya.jpg'
+  og_image: 'og-deepak-shakya.jpg'
   brand_image: '/deepak-shakya.jpg'
   description: 'Technologist | AI & Machine Learning Expert | Delivering Performance and Innovation'
   dark_mode: true
@@ -44,6 +44,9 @@ params:
       HasChildren: false
     - Name: 'Reads'
       URL: '/reads/'
+      HasChildren: false
+    - Name: 'Notes'
+      URL: '/notes/'
       HasChildren: false
   #  - Name: 'Projects'
   #    URL: '/projects/'
@@ -77,4 +80,5 @@ permalinks:
   #reads: '/:section/:slug'
   blog: '/:section/:year/:month/:slug'
   saves: '/:section/:slug'
+  notes: '/:section/:slug'
   #projects: '/:section/'

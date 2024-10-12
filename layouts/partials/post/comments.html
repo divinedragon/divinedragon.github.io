@@ -1,4 +1,5 @@
 <div class="comments giscus">
+{{ if not hugo.IsServer }}
   <script src="https://giscus.app/client.js"
                 data-repo="divinedragon/divinedragon.github.io"
                 data-repo-id="MDEwOlJlcG9zaXRvcnkxMjk4MTI1ODM="
@@ -14,4 +15,5 @@
                 crossorigin="anonymous"
                 async>
     </script>
+{{ end }}
 </div>
