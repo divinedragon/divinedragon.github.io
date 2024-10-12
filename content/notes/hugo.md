@@ -5,9 +5,9 @@ slug: hugo
 
 
 
-## Hugo Notes
+# Hugo Notes
 
-### Check if you running a local Hugo Server
+## Check if you running a local Hugo Server
 
 Since [v0.120.0][1], you use `hugo.IsServer`.
 
