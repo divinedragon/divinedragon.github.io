@@ -1,11 +1,12 @@
 ---
-title: "Hugo"
+title: "Hugo - Notes"
 slug: hugo
+description: "Hugo - Notes | References | Cheat-sheet"
 ---
 
 
 
-# Hugo Notes
+
 
 ## Check if you running a local Hugo Server
 
@@ -23,6 +24,14 @@ Older versions([v0.120.0][1] and older), use below.
 {{ if not .Site.IsServer }}
     <!-- This is rendered only on Production Build  -->
 {{ end }}
+```
+
+## Run Hugo Server locally
+
+This is the most straightforward, but just in case.
+
+```bash
+hugo server --baseURL="http://localhost:1313"
 ```
 
 
