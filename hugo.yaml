@@ -45,6 +45,9 @@ params:
     - Name: 'Reads'
       URL: '/reads/'
       HasChildren: false
+    - Name: 'Notes'
+      URL: '/notes/'
+      HasChildren: false
   #  - Name: 'Projects'
   #    URL: '/projects/'
   #    HasChildren: false
@@ -77,4 +80,5 @@ permalinks:
   #reads: '/:section/:slug'
   blog: '/:section/:year/:month/:slug'
   saves: '/:section/:slug'
+  notes: '/:section/:slug'
   #projects: '/:section/'
