@@ -23,6 +23,7 @@ markup:
 params:
   brand: 'Deepak Shakya'
   # remote_brand_image: 'https://avatars.githubusercontent.com/u/91791?v=4'
+  og_image: '/deepak-shakya.jpg'
   brand_image: '/deepak-shakya.jpg'
   description: ''
   dark_mode: true

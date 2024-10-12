@@ -21,7 +21,7 @@
 {{ if .IsPage }}
   {{ .Scratch.Set "title" ($.Site.Params.brand) }}
   {{ .Scratch.Add "title" " - " }}
-  {{ .Scratch.Add "title" .LinkTitle }}
+  {{ .Scratch.Set "title" .LinkTitle }}
 {{ end }}
 
 {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
@@ -29,7 +29,7 @@
 {{ $image_path_local :=  printf "assets/%s" $image_path -}}
 {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
 {{ if fileExists $image_path_local -}}
-{{ $image_path:= resources.Get $image_path}}
+{{ $image_path := resources.Get $image_path }}
   <meta property="og:image" content="{{ $image_path.RelPermalink }}" />
   {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}
   {{ if ne $image_ext "svg" -}}
@@ -44,6 +44,16 @@
   {{ end -}}
   <meta property="og:image:type" content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
 {{ end -}}
+
+{{ if (isset .Params "cover_image") }}
+{{ $cover_image := .Params.cover_image }}
+<meta property="og:image" content="{{ $cover_image }}" />
+<meta name="twitter:image" content="{{ $cover_image }}"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+<meta property="og:image:type" content="image/png">
+{{ end }}
 
 <!-- Title Tags -->
 <title itemprop="name">{{ .Scratch.Get "title" }}</title>
