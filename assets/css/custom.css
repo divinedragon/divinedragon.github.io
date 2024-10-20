@@ -68,6 +68,8 @@ hr {
 }
 
 blockquote {
+  font-family: "pt-sans";
+  font-style: italic;
   background-color: black;
   margin: 30px;
   border: 0px;
