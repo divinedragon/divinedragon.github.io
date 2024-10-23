@@ -50,6 +50,14 @@ Renders the content for which date is set in Future. By default, all content set
 hugo server --baseURL="http://localhost:1313" --buildFuture
 ```
 
+## Troubleshooting
+
+At any point of time, if you want to dump all variables in the current scope, use below
+
+```hbs
+{{ debug.Dump . }}
+```
+
 
 
    [1]: https://github.com/gohugoio/hugo/releases/tag/v0.120.0
