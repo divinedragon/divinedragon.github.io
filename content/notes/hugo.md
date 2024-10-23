@@ -1,6 +1,6 @@
 ---
-title: "Hugo - Notes"
-slug: hugo
+title: "Hugo"
+slug: "hugo"
 description: "Hugo - Notes | References | Cheat-sheet"
 ---
 
