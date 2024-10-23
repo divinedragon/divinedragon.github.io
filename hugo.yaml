@@ -78,7 +78,7 @@ taxonomies:
 
 permalinks:
   reads: '/:section/:slug'
-  blog: '/:section/:year/:month/:slug'
+  blog: '/:section/:slug'
   saves: '/:section/:slug'
   notes: '/:section/:slug'
   #projects: '/:section/'
