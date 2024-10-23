@@ -5,7 +5,7 @@
 <div class="posts">
   {{ range (.Paginate (.Pages)).Pages }}
   <article class="post">
-      {{ partial "post/info.html" . }}
+      {{ partial "post/tag-info.html" . }}
       {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
       {{ .Content }}
       {{ else }}
