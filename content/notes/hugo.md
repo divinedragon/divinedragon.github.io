@@ -10,7 +10,7 @@ description: "Hugo - Notes | References | Cheat-sheet"
 
 Since [v0.120.0][1], you use `hugo.IsServer`.
 
-```hugo
+```hbs
 {{ if not hugo.IsServer }}
     <!-- This is rendered only on Production Build  -->
 {{ end }}
@@ -18,7 +18,7 @@ Since [v0.120.0][1], you use `hugo.IsServer`.
 
 Older versions([v0.120.0][1] and older), use below.
 
-```hugo
+```hbs
 {{ if not .Site.IsServer }}
     <!-- This is rendered only on Production Build  -->
 {{ end }}
@@ -26,7 +26,7 @@ Older versions([v0.120.0][1] and older), use below.
 
 ## Run Hugo Server locally
 
-This is the most straightforward, but just in case.
+This is the most straightforward [hugo command][2], but just in case.
 
 ```bash
 hugo server --baseURL="http://localhost:1313"
