@@ -3,13 +3,12 @@
   {{ .Content }}
 </div>
 
-{{ $listPageTag := (eq .Kind "term") }}
-
 <div class="posts">
+  {{ $listPageTag := (eq .Kind "term") }}
   {{ range (.Paginate (.Pages)).Pages }}
   <article class="post">
       {{ if $listPageTag }}
-        {{ partial "post/tag-info.html" . }}
+        {{ partial "post/info-with-type-prefix.html" . }}
       {{ else }}
         {{ partial "post/info.html" . }}
       {{ end }}
