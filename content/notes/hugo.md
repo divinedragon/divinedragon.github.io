@@ -2,6 +2,7 @@
 title: "Hugo"
 slug: "hugo"
 description: "Hugo - Notes | References | Cheat-sheet"
+tags: [ hugo, reference, cheat-sheet]
 ---
 
 
