@@ -24,7 +24,7 @@
 
     {{ if .Params.tags }}
     <ul class="tags">
-      {{ range .Params.tags }}
+      {{ range  (sort .Params.tags) }}
       <li class="tag-{{ . }}">
         <a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>
       </li>
