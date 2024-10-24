@@ -58,7 +58,28 @@ At any point of time, if you want to dump all variables in the current scope, us
 {{ debug.Dump . }}
 ```
 
+## Using `.Kind`
+
+Sometimes, you need to know what kind of page you are in. To get this, use [`.Kind`][3]. The page kind is one of `home, page, section, taxonomy, term`.
+
+```
+content/
+├── books/
+│   ├── book-1/
+│   │   └── index.md    <-- kind = page
+│   ├── book-2.md       <-- kind = page
+│   └── _index.md       <-- kind = section
+├── tags/
+│   ├── fiction/
+│   │   └── _index.md   <-- kind = term
+│   └── _index.md       <-- kind = taxonomy
+└── _index.md           <-- kind = home
+```
+
+A suitable use case is depicted in [this blog post][4].
 
 
    [1]: https://github.com/gohugoio/hugo/releases/tag/v0.120.0
    [2]: https://gohugo.io/commands/hugo/
+   [3]: https://gohugo.io/methods/page/kind/
+   [4]: /blog/render-hugo-list-page-based-on-page-type-kind/
