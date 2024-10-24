@@ -62,7 +62,7 @@ At any point of time, if you want to dump all variables in the current scope, us
 
 Sometimes, you need to know what kind of page you are in. To get this, use [`.Kind`][3]. The page kind is one of `home, page, section, taxonomy, term`.
 
-```
+```bash
 content/
 ├── books/
 │   ├── book-1/
@@ -78,8 +78,23 @@ content/
 
 A suitable use case is depicted in [this blog post][4].
 
+## Functions
+
+Functions are available to help you with different tasks. Here is the [full list][5]
+
+### [String Functions][5]
+
+#### Convert a text to Title Case
+
+```hbs
+{{ title "table of contents (TOC)" }} → Table of Contents (TOC)
+```
+
+
 
    [1]: https://github.com/gohugoio/hugo/releases/tag/v0.120.0
    [2]: https://gohugo.io/commands/hugo/
    [3]: https://gohugo.io/methods/page/kind/
    [4]: /blog/render-hugo-list-page-based-on-page-type-kind/
+   [5]: https://gohugo.io/functions/
+   [6]: https://gohugo.io/functions/strings/
