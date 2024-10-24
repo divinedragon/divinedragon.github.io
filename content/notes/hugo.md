@@ -2,7 +2,8 @@
 title: "Hugo"
 slug: "hugo"
 description: "Hugo - Notes | References | Cheat-sheet"
-tags: [ hugo, reference, cheat-sheet]
+tags: [ hugo, reference, cheat-sheet ]
+cover_image: "notes/covers/hugo.png"
 ---
 
 
