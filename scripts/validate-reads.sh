@@ -29,7 +29,7 @@ for FILE in $(find . -maxdepth 1 -not -type d | cut -c3- | sort); do
     content_notes=$(head -12 "$FILE" | tail -1 | grep '^## Notes' | wc -l)
 
     # Check if Page Links has 3 empty lines before it
-    content_page_links=$(grep -i -B 4 "^  \[1\]" "$FILE" | grep -c '^$')
+    content_page_links=$(grep -i -B 4 "^[[:space:]]\{2,3\}\[1\]" "$FILE" | grep -c '^$')
 
     [ "$front_matter_date" -ne "1" ] && FAIL="${FAIL}\n\t🔴 Date in Front Matter incorrect"
     [ "$front_matter_title" -ne "1" ] && FAIL="${FAIL}\n\t🔴 Title in Front Matter incorrect"
