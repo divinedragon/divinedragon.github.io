@@ -6,7 +6,7 @@
 <div class="posts">
   {{ $listPageTag := (eq .Kind "term") }}
   {{ range (.Paginate (.Pages)).Pages }}
-  <article class="post">
+  <article class="post" data-pagefind-ignore="all">
       {{ if $listPageTag }}
         {{ partial "post/info-with-type-prefix.html" . }}
       {{ else }}

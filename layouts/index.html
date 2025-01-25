@@ -2,7 +2,7 @@
 <div class="homepage-content">
   {{ .Content }}
 </div>
-<div class="posts">
+<div class="posts" data-pagefind-ignore="all">
     {{ $frontPageTypes := default (slice "posts") .Site.Params.front_page_content }}
     {{ range (.Paginate (where .Site.RegularPages "Type" "in" $frontPageTypes)).Pages }}
     <article class="post">

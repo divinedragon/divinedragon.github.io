@@ -1,7 +1,9 @@
 {{ define "main" -}}
 <div class="post">
   {{ partial "post/info.html" . }}
+  <div data-pagefind-body>
   {{ .Content }}
+  </div>
   {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}
   {{ end }}
