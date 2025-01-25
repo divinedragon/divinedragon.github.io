@@ -9,4 +9,5 @@
     (resources.Get "css/custom.css")
   | resources.Concat "css/bundle.css" | minify | fingerprint }}
 
-<link type="text/css" rel="stylesheet" href="{{ $css_bundle.RelPermalink }}">
+<link type="text/css" rel="stylesheet" href="{{ $css_bundle.RelPermalink }}" />
+<link type="text/css" rel="stylesheet" href="/pagefind/pagefind-ui.css" />

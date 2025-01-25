@@ -1,6 +1,6 @@
 {{ $pag := .Paginate (.Pages) }}
 {{ if gt $pag.TotalPages 1 }}
-<div class="footer">
+<div class="footer" data-pagefind-ignore="all">
 <nav id="page-nav">
 
     {{ if $pag.HasPrev }}

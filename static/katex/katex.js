@@ -12,7 +12,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
@@ -25,12 +25,12 @@ return /******/ (function() { // webpackBootstrap
 /******/ 			}
 /******/ 		};
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 
@@ -8786,7 +8786,7 @@ var letCommand = function letCommand(parser, name, tok, global) {
 
 defineFunction({
   type: "internal",
-  names: ["\\global", "\\long", "\\\\globallong" // can’t be entered directly
+  names: ["\\global", "\\long", "\\\\globallong" // can't be entered directly
   ],
   props: {
     numArgs: 0,
@@ -8849,7 +8849,7 @@ defineFunction({
           delimiters[numArgs].push("{");
           break;
         } // A parameter, the first appearance of # must be followed by 1,
-        // the next by 2, and so on; up to nine #’s are allowed
+        // the next by 2, and so on; up to nine #'s are allowed
 
 
         tok = parser.gullet.popToken();
@@ -8902,7 +8902,7 @@ defineFunction({
 
 defineFunction({
   type: "internal",
-  names: ["\\let", "\\\\globallet" // can’t be entered directly
+  names: ["\\let", "\\\\globallet" // can't be entered directly
   ],
   props: {
     numArgs: 0,
@@ -8925,7 +8925,7 @@ defineFunction({
 
 defineFunction({
   type: "internal",
-  names: ["\\futurelet", "\\\\globalfuture" // can’t be entered directly
+  names: ["\\futurelet", "\\\\globalfuture" // can't be entered directly
   ],
   props: {
     numArgs: 0,
@@ -12043,7 +12043,7 @@ var genfrac_mathmlBuilder = function mathmlBuilder(group, options) {
 
 defineFunction({
   type: "genfrac",
-  names: ["\\dfrac", "\\frac", "\\tfrac", "\\dbinom", "\\binom", "\\tbinom", "\\\\atopfrac", // can’t be entered directly
+  names: ["\\dfrac", "\\frac", "\\tfrac", "\\dbinom", "\\binom", "\\tbinom", "\\\\atopfrac", // can't be entered directly
   "\\\\bracefrac", "\\\\brackfrac" // ditto
   ],
   props: {
@@ -15430,8 +15430,8 @@ var macros = _macros;
 
 defineMacro("\\noexpand", function (context) {
   // The expansion is the token itself; but that token is interpreted
-  // as if its meaning were ‘\relax’ if it is a control sequence that
-  // would ordinarily be expanded by TeX’s expansion rules.
+  // as if its meaning were ‘\relax' if it is a control sequence that
+  // would ordinarily be expanded by TeX's expansion rules.
   var t = context.popToken();
 
   if (context.isExpandable(t.text)) {
@@ -15446,7 +15446,7 @@ defineMacro("\\noexpand", function (context) {
 });
 defineMacro("\\expandafter", function (context) {
   // TeX first reads the token that comes immediately after \expandafter,
-  // without expanding it; let’s call this token t. Then TeX reads the
+  // without expanding it; let's call this token t. Then TeX reads the
   // token that comes after t (and possibly more tokens, if that token
   // has an argument), replacing it by its expansion. Finally TeX puts
   // t back in front of that expansion.
@@ -16381,7 +16381,7 @@ defineMacro("\\kaBlue", "\\textcolor{##314453}{#1}");
 defineMacro("\\kaGreen", "\\textcolor{##71B307}{#1}");
 ;// CONCATENATED MODULE: ./src/MacroExpander.js
 /**
- * This file contains the “gullet” where macros are expanded
+ * This file contains the "gullet" where macros are expanded
  * until only non-macro tokens remain.
  */
 
@@ -16570,16 +16570,16 @@ var MacroExpander = /*#__PURE__*/function () {
     // empty) sequence of tokens with properly nested {...} groups that is
     // followed ... by this particular list of non-parameter tokens.
     // The argument for an undelimited parameter is the next nonblank
-    // token, unless that token is ‘{’, when the argument will be the
+    // token, unless that token is ‘{', when the argument will be the
     // entire {...} group that follows.
     var tokens = [];
     var isDelimited = delims && delims.length > 0;
 
     if (!isDelimited) {
       // Ignore spaces between arguments.  As the TeXbook says:
-      // "After you have said ‘\def\row#1#2{...}’, you are allowed to
-      //  put spaces between the arguments (e.g., ‘\row x n’), because
-      //  TeX doesn’t use single spaces as undelimited arguments."
+      // "After you have said ‘\def\row#1#2{...}', you are allowed to
+      //  put spaces between the arguments (e.g., ‘\row x n'), because
+      //  TeX doesn't use single spaces as undelimited arguments."
       this.consumeSpaces();
     }
 
@@ -16617,7 +16617,7 @@ var MacroExpander = /*#__PURE__*/function () {
           match = 0;
         }
       }
-    } while (depth !== 0 || isDelimited); // If the argument found ... has the form ‘{<nested tokens>}’,
+    } while (depth !== 0 || isDelimited); // If the argument found ... has the form ‘{<nested tokens>}',
     // ... the outermost braces enclosing the argument are removed
 
 
@@ -16765,7 +16765,7 @@ var MacroExpander = /*#__PURE__*/function () {
 
       if (expanded instanceof Token) {
         // the token after \noexpand is interpreted as if its meaning
-        // were ‘\relax’
+        // were ‘\relax'
         if (expanded.treatAsRelax) {
           expanded.text = "\\relax";
         }

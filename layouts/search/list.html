@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div id="search"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search", showSubResults: false });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+
+        if (query) {
+            document.querySelector("#search input").value = query;
+            document.querySelector("#search input").dispatchEvent(new Event('input'));
+        }
+    });
+</script>
+{{- end -}}
