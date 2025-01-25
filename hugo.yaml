@@ -33,9 +33,6 @@ params:
   custom_css:
     - 'css/custom.css'
   menu:
-    - Name: 'Home'
-      URL: '/'
-      HasChildren: false
     - Name: 'Blog'
       URL: '/blog/'
       HasChildren: false
@@ -47,6 +44,9 @@ params:
       HasChildren: false
     - Name: 'Notes'
       URL: '/notes/'
+      HasChildren: false
+    - Name: 'Search'
+      URL: '/search/'
       HasChildren: false
   #  - Name: 'Projects'
   #    URL: '/projects/'
