@@ -10,8 +10,12 @@ for FILE in $(find . -maxdepth 1 -not -type d | cut -c3- | sort); do
 
     FAIL=""
 
+    # File Date Value
+    file_date_expected=$(echo "$FILE" | cut -c1-10)
+
     # Check if File has date in Front Matter
-    front_matter_date=$(head -2 "$FILE" | tail -1 | grep '^date: ".*"$' | wc -l)
+    file_date_actual=$(head -2 "$FILE" | tail -1 | grep '^date: ".*"$' | sed "s/date: //" | sed 's/"//g')
+    front_matter_date=$(echo "$file_date_actual" | wc -l)
 
     # Check if File has title in Front Matter
     front_matter_title=$(head -3 "$FILE" | tail -1 | grep '^title: ".*"$' | wc -l)
@@ -34,6 +38,7 @@ for FILE in $(find . -maxdepth 1 -not -type d | cut -c3- | sort); do
     [ "$front_matter_tags" -ne "1" ] && FAIL="${FAIL}\n\t🔴 Tags in Front Matter incorrect"
     [ "$content_saves" -ne "0" ] && FAIL="${FAIL}\n\t🔴 'Source' content section is incorrect"
     [ "$content_page_links" -ne "3" ] && FAIL="${FAIL}\n\t🔴 Page Links section is incorrect"
+    [ "$file_date_expected" != "$file_date_actual" ] && FAIL="${FAIL}\n\t🔴 File Date and Content Date do not match"
 
     if [ "x${FAIL}" = "x" ]; then
         echo "[INFO] Pass - ${FILE} ✅"
