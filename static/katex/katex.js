@@ -640,20 +640,20 @@ var scriptData = [{
   blocks: [[0x0530, 0x058F]]
 }, {
   // The Brahmic scripts of South and Southeast Asia
-  // Devanagari (0900–097F)
-  // Bengali (0980–09FF)
-  // Gurmukhi (0A00–0A7F)
-  // Gujarati (0A80–0AFF)
-  // Oriya (0B00–0B7F)
-  // Tamil (0B80–0BFF)
-  // Telugu (0C00–0C7F)
-  // Kannada (0C80–0CFF)
-  // Malayalam (0D00–0D7F)
-  // Sinhala (0D80–0DFF)
-  // Thai (0E00–0E7F)
-  // Lao (0E80–0EFF)
-  // Tibetan (0F00–0FFF)
-  // Myanmar (1000–109F)
+  // Devanagari (0900-097F)
+  // Bengali (0980-09FF)
+  // Gurmukhi (0A00-0A7F)
+  // Gujarati (0A80-0AFF)
+  // Oriya (0B00-0B7F)
+  // Tamil (0B80-0BFF)
+  // Telugu (0C00-0C7F)
+  // Kannada (0C80-0CFF)
+  // Malayalam (0D00-0D7F)
+  // Sinhala (0D80-0DFF)
+  // Thai (0E00-0E7F)
+  // Lao (0E80-0EFF)
+  // Tibetan (0F00-0FFF)
+  // Myanmar (1000-109F)
   name: 'brahmic',
   blocks: [[0x0900, 0x109F]]
 }, {
@@ -5352,7 +5352,7 @@ var wideCharacterFont = function wideCharacterFont(wideChar, mode) {
     // Greek letters. Not supported, yet.
     return ["", ""];
   } else {
-    // We don't support any wide characters outside 1D400–1D7FF.
+    // We don't support any wide characters outside 1D400-1D7FF.
     throw new src_ParseError("Unsupported character: " + wideChar);
   }
 };
@@ -15704,7 +15704,7 @@ defineMacro("\\AA", "\\r A"); // Copyright (C) and registered (R) symbols. Use r
 
 defineMacro("\\textcopyright", "\\html@mathml{\\textcircled{c}}{\\char`©}");
 defineMacro("\\copyright", "\\TextOrMath{\\textcopyright}{\\text{\\textcopyright}}");
-defineMacro("\\textregistered", "\\html@mathml{\\textcircled{\\scriptsize R}}{\\char`®}"); // Characters omitted from Unicode range 1D400–1D7FF
+defineMacro("\\textregistered", "\\html@mathml{\\textcircled{\\scriptsize R}}{\\char`®}"); // Characters omitted from Unicode range 1D400-1D7FF
 
 defineMacro("\u212C", "\\mathscr{B}"); // script
 
